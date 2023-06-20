@@ -14,7 +14,6 @@ l = len(os.listdir(dir))
 i = 0
 for file in os.listdir(dir):
 
-    if file[-7:-4] != "131": continue # REMOVE THIS
     img = im = Image.open(os.path.join(dir, file))
     img = im.convert('RGB')
     arr = np.array(img)
