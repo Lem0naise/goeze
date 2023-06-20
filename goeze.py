@@ -1,8 +1,4 @@
-# We are running this program on a subset of the pictures we received, excluding pictures whose majority is black or indistinguishable colours.
-
-
-import extcolors
-import os
+# We are running this program on a subset of the pictures we received, after we ran another program to exclude pictures whose majority is black or indistinguishable colours.
 import numpy as np
 from PIL import Image
 
@@ -40,7 +36,6 @@ for file in os.listdir(dir):
     i += 1
     im2.save(f"new/{i}.jpg")     
     print(cols)
-    os.system("clear")
     print(f"{i} pics out of {l}")
 
 cols.pop()
