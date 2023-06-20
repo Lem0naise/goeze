@@ -1,4 +1,5 @@
-# We are running this program on a subset of the pictures we received, after we ran another program to exclude pictures whose majority is black or indistinguishable colours.
+# We are running this program on a subset of the pictures we received, after we ran another program to excludepictures whose majority is black or indistinguishable colours.
+import os
 import numpy as np
 from PIL import Image
 
